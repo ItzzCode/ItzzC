@@ -8,15 +8,14 @@
 */
 
 #include <graphx.h>
-#include "./OPTIX-main/src/optix.c"
+#include "./OPTIX-main/optix.c"
 
 int menu( void ){
     gfx_Begin();
+    gfx_FillScreen(255);
 
-    //this does not work :<
-    delay(1000);
+    // still doesnt work but it does run.
     optix_Menu("TEST", "Play`Statistics`Options`", 12, 150, 3);
-
     gfx_End();
     return 0;
 }
