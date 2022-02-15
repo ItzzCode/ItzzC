@@ -7,9 +7,19 @@
  *--------------------------------------
 */
 
-#include "menu.c"
+#include <tice.h>
+#include <graphx.h>
 
 int main( void ){
-    menu();
+    gfx_Begin();
+    gfx_SetDrawBuffer();
+
+    while ( !os_GetCSC() ){
+        gfx_FillScreen(255);
+        
+        gfx_SwapDraw();
+    }
+
+    gfx_End();
     return 0;
 }

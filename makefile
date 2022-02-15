@@ -2,8 +2,8 @@
 # Makefile Options
 # ----------------------------
 
-NAME = DEMO
-ICON = icon.png
+NAME = ItzzC
+#ICON = icon.png
 DESCRIPTION = "CE C Toolchain Demo"
 COMPRESSED = NO
 ARCHIVED = NO
